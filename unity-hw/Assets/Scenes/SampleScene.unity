@@ -6393,7 +6393,7 @@ GameObject:
   m_Component:
   - component: {fileID: 183524520}
   m_Layer: 0
-  m_Name: HollowSphereParent
+  m_Name: Spheres
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
