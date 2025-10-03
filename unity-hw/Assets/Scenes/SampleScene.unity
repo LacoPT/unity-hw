@@ -1386,8 +1386,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dicePrefab: {fileID: 5167679051794600758, guid: b508b39b908da66759d26dc0c8c2a9c0, type: 3}
-  diceCount: 5
-  diceDispersion: 3
+  diceCount: 7
+  diceDispersion: 4.12
   startPosition: {x: 0, y: 7, z: 0}
 --- !u!4 &2079734274
 Transform:
