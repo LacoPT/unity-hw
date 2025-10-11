@@ -13,15 +13,6 @@
                     "processors": "",
                     "interactions": "Tap",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "CalculateScore",
-                    "type": "Button",
-                    "id": "90365dfc-2f5c-4bd7-b0aa-ad2e248a14b1",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -33,17 +24,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Roll",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3c5373c7-9eaf-4f9c-8215-e7d00eb98fa6",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CalculateScore",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

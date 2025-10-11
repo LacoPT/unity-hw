@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: LocalizationTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: d7c770e6180f964c3a45441f0f09598e, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 100957888512
+    m_Localized: Rules
+    m_Metadata:
+      m_Items: []
+  - m_Id: 107173847040
+    m_Localized: Dice count
+    m_Metadata:
+      m_Items: []
+  - m_Id: 227042861056
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 266767114240
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 482283036672
+    m_Localized: Roll key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 520044355584
+    m_Localized: Wait...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1402874044416
+    m_Localized: Press the button to roll the dice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 573660143616
+    m_Localized: That's a draw :|
+    m_Metadata:
+      m_Items: []
+  - m_Id: 631445069824
+    m_Localized: Oh, no. You lost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1749860425728
+    m_Localized: Congrats! You won!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 678333194240
+    m_Localized: To win
+    m_Metadata:
+      m_Items: []
+  - m_Id: 809568772096
+    m_Localized: For draw
+    m_Metadata:
+      m_Items: []
+  - m_Id: 892066537472
+    m_Localized: For loss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1098241744896
+    m_Localized: History
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -4,26 +4,38 @@ using UnityEngine.Serialization;
 
 public class DiceSpawner : MonoBehaviour
 {
-    [SerializeField]
-    private Dice dicePrefab;
-    [SerializeField] [Range(1, 10)] private int diceCount;
+    [SerializeField] private Dice dicePrefab;
     [SerializeField] [Range(2f, 5f)] private float diceDispersion;
     [SerializeField] private Vector3 startPosition;
+
+    public static DiceSpawner Instance;
     
     private List<Dice> dices = new List<Dice>();
-    private DiceRoller roller;
 
     private void Awake()
     {
-        roller = GetComponent<DiceRoller>();
-        RespawnDices();
+        if (Instance == null)
+            Instance = this;
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
-    private void RespawnDices()
+    //Using start to ensure that singleton is initialized
+    private void Start()
     {
+        GameState.Instance.diceCountChanged.AddListener(RespawnDices);
+        //In case if binding happened after first event invoke
+        RespawnDices(GameState.Instance.initialDiceCount);
+    }
+
+    private void RespawnDices(int diceCount)
+    {
+        //There could be pooling logic, but nah
         foreach (var dice in dices)
         {
-            Destroy(dice);
+            Destroy(dice.gameObject);
         }
         dices.Clear();
         
@@ -33,6 +45,6 @@ public class DiceSpawner : MonoBehaviour
             dices.Add(Instantiate(dicePrefab, startPosition + displace, Quaternion.identity));
         }
      
-        roller.SetDices(dices);
+        DiceRoller.Instance.SetDices(dices);
     }
 }
